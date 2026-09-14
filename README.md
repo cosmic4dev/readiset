@@ -112,7 +112,7 @@ releases. This repository does not grant additional rights beyond those terms.
 
 The READI dataset is available for research use upon request. To request access,
 email **Park** at
-[cosmic4intelligencel@gmail.com](mailto:cosmic4intelligence@gmail.com) with your
+[cosmic4intelligence@gmail.com](mailto:cosmic4intelligence@gmail.com) with your
 name, affiliation, and a brief description of the intended research use.
 
 Source workbooks and manuscript files are not distributed through this repository.
