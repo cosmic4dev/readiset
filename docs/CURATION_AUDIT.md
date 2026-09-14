@@ -29,5 +29,5 @@ remain private until the official archive resolves the source discrepancies and
 publishes authoritative usage terms. Informal request-by-request distribution is
 not used as a substitute for a documented archival release.
 
-The repository-level `CITATION.cff` identifies Kyungwon Park as maintainer. Its
-preferred paper citation retains all authors of the accompanying paper.
+Repository citation metadata is intentionally deferred until the official
+archival citation is publicly available.

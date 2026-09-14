@@ -1,7 +1,7 @@
 # Release checklist
 
 - [x] Confirm that the benchmark name and public description match the paper.
-- [x] Transcribe the paper title and author list into `CITATION.cff`.
+- [ ] Add the official archival citation to the README when publicly available.
 - [ ] Add official proceedings, Anthology, DOI, and/or arXiv identifiers when public.
 - [ ] Resolve the 57-paper-vs-56-workbook Korean item discrepancy.
 - [ ] Supply owner-approved corrections for seven missing intensity cells.

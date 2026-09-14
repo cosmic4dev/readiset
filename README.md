@@ -84,9 +84,8 @@ malformed predictions are reported and never silently removed from the denominat
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Archival paper and proceedings links should
-be added once publicly available. Kyungwon Park is listed as the repository
-maintainer; the preferred paper citation preserves the complete author list.
+Please cite the official archival paper. The proceedings link and archival
+citation will be added once publicly available.
 
 ## License
 
