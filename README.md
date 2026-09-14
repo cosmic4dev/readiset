@@ -50,17 +50,6 @@ READI follows a CCSARP-based graded indirectness design.
 | 2 | NCID - strong hint | Non-conventional directive with a lexical hint |
 | 3 | NCID - mild/no hint | Non-conventional directive requiring stronger contextual inference |
 
-## Data access
-
-The READI dataset is available for research use upon request. To request access,
-email **Kyungwon Park** at
-[cosmic4intelligencel@gmail.com](mailto:cosmic4intelligencel@gmail.com) with your
-name, affiliation, and a brief description of the intended research use.
-
-Source workbooks and manuscript files are not distributed through this repository.
-Access to the released dataset is subject to its accompanying usage terms.
-
-The normalized public format is documented in [the data card](docs/DATA_CARD.md).
 
 ## Evaluation
 
@@ -120,3 +109,15 @@ Please cite the archival paper:
 
 Paper, code, and data usage terms follow their respective official archival
 releases. This repository does not grant additional rights beyond those terms.
+
+## Data access
+
+The READI dataset is available for research use upon request. To request access,
+email **Park** at
+[cosmic4intelligencel@gmail.com](mailto:cosmic4intelligencel@gmail.com) with your
+name, affiliation, and a brief description of the intended research use.
+
+Source workbooks and manuscript files are not distributed through this repository.
+Access to the released dataset is subject to its accompanying usage terms.
+
+The normalized public format is documented in [the data card](docs/DATA_CARD.md).
