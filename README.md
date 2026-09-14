@@ -15,16 +15,6 @@ sociopragmatic context.
 | Data | Available for research use upon request |
 | License | Paper, code, and data follow their respective release terms |
 
-## Paper
-
-**Read the Room, Read the Image: Understanding Indirect Speech Acts in
-Multimodal Visual Contexts**
-
-Findings of the Association for Computational Linguistics: ACL 2026
-
-- [ACL Anthology](https://aclanthology.org/2026.findings-acl.1556/)
-- [arXiv](https://arxiv.org/abs/2608.30270)
-- [DOI](https://doi.org/10.18653/v1/2026.findings-acl.1556)
 
 ## Benchmark
 
