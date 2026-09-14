@@ -102,28 +102,6 @@ python -m unittest discover -s tests -v
 └── requirements.txt
 ```
 
-## Citation
-
-Please cite the archival paper:
-
-> Jaehee Kim, Ji Hoon Chung, Seoyoon Park, Unsol Kim, Kyungwon Park, JiHak Kim,
-> Yi-Jun Chen, and Hansaem Kim. 2026. “Read the Room, Read the Image:
-> Understanding Indirect Speech Acts in Multimodal Visual Contexts.” In
-> *Findings of the Association for Computational Linguistics: ACL 2026*,
-> pages 31109–31124. Association for Computational Linguistics.
-
-```bibtex
-@inproceedings{kim-etal-2026-read,
-  title     = {Read the Room, Read the Image: Understanding Indirect Speech Acts in Multimodal Visual Contexts},
-  author    = {Kim, Jaehee and Chung, Ji Hoon and Park, Seoyoon and Kim, Unsol and Park, Kyungwon and Kim, JiHak and Chen, Yi-Jun and Kim, Hansaem},
-  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
-  year      = {2026},
-  pages     = {31109--31124},
-  publisher = {Association for Computational Linguistics},
-  url       = {https://aclanthology.org/2026.findings-acl.1556/},
-  doi       = {10.18653/v1/2026.findings-acl.1556}
-}
-```
 
 ## Usage terms
 
