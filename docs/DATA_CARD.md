@@ -53,12 +53,9 @@ for qualitative visual-grounding analysis but are not part of the primary score.
 - Scenarios are theory-driven rather than naturally occurring.
 - Only Korean and English are represented.
 - The task evaluates understanding, not generation.
-- Current source files have unresolved count and intensity discrepancies documented
-  in `SOURCE_AUDIT.md`.
 
 ## Privacy and consent
 
 The paper states that contributors were recruited through academic and professional
 networks, informed consent was obtained, the data is for research use, and personal
 identifiers were anonymized. A release-level human review is still required.
-

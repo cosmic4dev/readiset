@@ -1,58 +1,73 @@
 # READI: Read the Room, Read the Image
 
+[![ACL Anthology](https://img.shields.io/badge/Findings%20of%20ACL-2026-1f6feb)](https://aclanthology.org/2026.findings-acl.1556/)
+[![arXiv](https://img.shields.io/badge/arXiv-2608.30270-b31b1b)](https://arxiv.org/abs/2608.30270)
+
 READI is a bilingual multimodal benchmark for evaluating whether vision-language
 models can infer the intended function of indirect directive speech acts from an
 utterance and its visual sociopragmatic context.
 
-The benchmark accompanies **“Read the Room, Read the Image: Understanding
-Indirect Speech Acts in Multimodal Visual Contexts.”**
+## Paper
 
-> **Release-candidate status:** the code and documentation may be published first.
-> The source workbooks, manuscript PDF, extracted images, and generated benchmark
-> data remain private until the source discrepancies in `docs/SOURCE_AUDIT.md` are
-> resolved and the official archival release is finalized.
+**Read the Room, Read the Image: Understanding Indirect Speech Acts in
+Multimodal Visual Contexts**
 
-## Benchmark task
+Findings of the Association for Computational Linguistics: ACL 2026
 
-Each item contains one image, one indirect directive utterance, one question about
-the utterance's pragmatic function, four mutually exclusive intent choices, and
-one gold choice.
+- [ACL Anthology](https://aclanthology.org/2026.findings-acl.1556/)
+- [arXiv](https://arxiv.org/abs/2608.30270)
+- [DOI](https://doi.org/10.18653/v1/2026.findings-acl.1556)
 
-| Level | Category | Interpretation |
+## Benchmark
+
+Each READI item contains:
+
+- an image encoding sociopragmatic context;
+- an indirect directive utterance;
+- a question about the utterance's pragmatic function;
+- four mutually exclusive intent choices; and
+- one gold answer.
+
+The benchmark contains 102 multimodal items across two independently developed
+subsets:
+
+| Subset | Language | Items |
+|---|---|---:|
+| KRISA | Korean | 57 |
+| ENGISA | English | 45 |
+
+KRISA and ENGISA are not translation pairs. Each was constructed and validated
+through a language-specific process.
+
+### Indirectness levels
+
+READI follows a CCSARP-based graded indirectness design.
+
+| Level | Category | Description |
 |---|---|---|
 | 1 | CID | Conventionally indirect directive |
 | 2 | NCID - strong hint | Non-conventional directive with a lexical hint |
 | 3 | NCID - mild/no hint | Non-conventional directive requiring stronger contextual inference |
 
-KRISA and ENGISA were developed independently through language-specific
-procedures. They are not translation pairs and must not be evaluated as aligned
-item pairs.
+## Data access
 
-## Reported benchmark size
+Benchmark data and usage terms follow the authorized archival release. Source
+workbooks and manuscript files are not distributed through this repository.
 
-The paper reports 102 multimodal items: 57 Korean and 45 English. The supplied
-workbooks currently contain 56 Korean and 45 English item rows. Several intensity
-cells are also blank. The release builder rejects these inconsistencies instead
-of inferring labels from row order. See [the source audit](docs/SOURCE_AUDIT.md).
+The normalized public format is documented in [the data card](docs/DATA_CARD.md).
 
-## Build
+## Evaluation
 
-```bash
-python -m pip install -r requirements.txt
+READI is evaluated as four-choice visual pragmatic question answering. The
+primary metric is exact-match accuracy.
 
-python scripts/build_release.py \
-  --krisa docs/KRISA_READI.xlsx \
-  --engisa docs/ENGISA_READI.xlsx \
-  --corrections data/source_corrections.json \
-  --output-dir data/release
+Predictions use one JSON object per line:
 
-python scripts/validate_release.py --data-dir data/release
+```json
+{"item_id":"readi_ko_001","predicted_choice":2}
 ```
 
-`source_corrections.json` must be supplied and approved by the dataset owners.
-The repository does not guess missing labels or fabricate the missing Korean item.
-
-## Evaluate
+Run the evaluator with:
 
 ```bash
 python scripts/evaluate.py \
@@ -60,35 +75,42 @@ python scripts/evaluate.py \
   --predictions predictions/model.jsonl
 ```
 
-The primary metric is four-choice accuracy. Missing, duplicate, unknown, and
-malformed predictions are reported and never silently removed from the denominator.
+Missing, duplicate, unknown, and malformed predictions are reported and remain
+in the evaluation denominator. See [the prediction format](docs/PREDICTION_FORMAT.md)
+for details.
 
-## Repository layout
+## Release utilities
+
+The repository includes deterministic utilities for converting authorized source
+workbooks, extracting embedded images, validating annotations and file hashes,
+and scoring model predictions.
+
+```bash
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+```
+
+## Repository structure
 
 ```text
-├── data/
-│   ├── README.md
-│   └── source_corrections.example.json
-├── docs/
-│   ├── CURATION_AUDIT.md
-│   ├── DATA_CARD.md
-│   ├── PREDICTION_FORMAT.md
-│   ├── RELEASE_CHECKLIST.md
-│   └── SOURCE_AUDIT.md
-├── scripts/
-│   ├── build_release.py
-│   ├── evaluate.py
-│   └── validate_release.py
-└── tests/
+├── data/                 # Data-access and format notes
+├── docs/                 # Data card and prediction specification
+├── scripts/              # Build, validation, and evaluation utilities
+├── tests/                # Regression tests
+└── requirements.txt
 ```
 
 ## Citation
 
-Please cite the official archival paper. The proceedings link and archival
-citation will be added once publicly available.
+Please cite the archival paper:
 
-## License
+> Jaehee Kim, Ji Hoon Chung, Seoyoon Park, Unsol Kim, Kyungwon Park, JiHak Kim,
+> Yi-Jun Chen, and Hansaem Kim. 2026. “Read the Room, Read the Image:
+> Understanding Indirect Speech Acts in Multimodal Visual Contexts.” In
+> *Findings of the Association for Computational Linguistics: ACL 2026*,
+> pages 31109–31124. Association for Computational Linguistics.
 
-Code and data usage terms follow the official archival release. This repository
-does not grant additional rights. The manuscript PDF is not redistributed here;
-the official proceedings or archive link will be used when available.
+## Usage terms
+
+Paper, code, and data usage terms follow their respective official archival
+releases. This repository does not grant additional rights beyond those terms.
