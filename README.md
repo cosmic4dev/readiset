@@ -3,9 +3,10 @@
 [![ACL Anthology](https://img.shields.io/badge/Findings%20of%20ACL-2026-1f6feb)](https://aclanthology.org/2026.findings-acl.1556/)
 [![arXiv](https://img.shields.io/badge/arXiv-2608.30270-b31b1b)](https://arxiv.org/abs/2608.30270)
 
-READI is a bilingual multimodal benchmark for evaluating whether vision-language
-models can infer the intended function of indirect directive speech acts from an
-utterance and its visual sociopragmatic context.
+This is the official companion-code repository for READI, a bilingual multimodal
+benchmark for evaluating whether vision-language models can infer the intended
+function of indirect directive speech acts from an utterance and its visual
+sociopragmatic context.
 
 ## Paper
 
@@ -51,8 +52,13 @@ READI follows a CCSARP-based graded indirectness design.
 
 ## Data access
 
-Benchmark data and usage terms follow the authorized archival release. Source
-workbooks and manuscript files are not distributed through this repository.
+The READI dataset is available for research use upon request. To request access,
+email **Kyungwon Park** at
+[cosmic4intelligencel@gmail.com](mailto:cosmic4intelligencel@gmail.com) with your
+name, affiliation, and a brief description of the intended research use.
+
+Source workbooks and manuscript files are not distributed through this repository.
+Access to the released dataset is subject to its accompanying usage terms.
 
 The normalized public format is documented in [the data card](docs/DATA_CARD.md).
 

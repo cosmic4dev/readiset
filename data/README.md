@@ -1,8 +1,9 @@
 # Data access
 
-The authorized archival release defines access to the READI benchmark data and
-its usage terms. Source workbooks and manuscript files are not distributed in
-this repository.
+The READI dataset is available for research use upon request. Email Kyungwon Park
+at `cosmic4intelligencel@gmail.com` with your name, affiliation, and a brief
+description of the intended research use. Source workbooks and manuscript files
+are not distributed in this repository.
 
 The evaluation utilities expect the following local structure:
 
