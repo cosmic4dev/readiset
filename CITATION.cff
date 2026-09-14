@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use READI, please cite the accompanying paper."
+title: "READI: Read the Room, Read the Image"
+type: dataset
+authors:
+  - {family-names: Park, given-names: Kyungwon}
+preferred-citation:
+  type: conference-paper
+  title: "Read the Room, Read the Image: Understanding Indirect Speech Acts in Multimodal Visual Contexts"
+  authors:
+    - {family-names: Kim, given-names: Jaehee}
+    - {family-names: Chung, given-names: Ji Hoon}
+    - {family-names: Park, given-names: Seoyoon}
+    - {family-names: Kim, given-names: Unsol}
+    - {family-names: Park, given-names: Kyungwon}
+    - {family-names: Kim, given-names: Ji Hak}
+    - {family-names: Chen, given-names: Yi-Jun}
+    - {family-names: Kim, given-names: Hansaem}
+  year: 2026
