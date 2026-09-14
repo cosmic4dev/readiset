@@ -60,14 +60,16 @@ READI follows a CCSARP-based graded indirectness design.
 
 ## Evaluation
 
-READI is evaluated as four-choice visual pragmatic question answering. The
-primary metric is exact-match accuracy.
+READI formulates visual pragmatic understanding as a four-choice
+question-answering task. The primary metric is four-choice accuracy.
 
-Predictions use one JSON object per line:
+Predictions must be provided as JSONL, with one object per item:
 
 ```json
-{"item_id":"readi_ko_001","predicted_choice":2}
+{"item_id": "readi_ko_001", "predicted_choice": 2}
 ```
+
+`predicted_choice` must be an integer from 1 to 4.
 
 Run the evaluator with:
 
