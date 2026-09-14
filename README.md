@@ -8,6 +8,13 @@ benchmark for evaluating whether vision-language models can infer the intended
 function of indirect directive speech acts from an utterance and its visual
 sociopragmatic context.
 
+| Resource | Status |
+|---|---|
+| Paper | [ACL Anthology](https://aclanthology.org/2026.findings-acl.1556/) · [arXiv](https://arxiv.org/abs/2608.30270) |
+| Code | Evaluation and release utilities available in this repository |
+| Data | Available for research use upon request |
+| License | Paper, code, and data follow their respective release terms |
+
 ## Paper
 
 **Read the Room, Read the Image: Understanding Indirect Speech Acts in
@@ -104,6 +111,19 @@ Please cite the archival paper:
 > Understanding Indirect Speech Acts in Multimodal Visual Contexts.” In
 > *Findings of the Association for Computational Linguistics: ACL 2026*,
 > pages 31109–31124. Association for Computational Linguistics.
+
+```bibtex
+@inproceedings{kim-etal-2026-read,
+  title     = {Read the Room, Read the Image: Understanding Indirect Speech Acts in Multimodal Visual Contexts},
+  author    = {Kim, Jaehee and Chung, Ji Hoon and Park, Seoyoon and Kim, Unsol and Park, Kyungwon and Kim, JiHak and Chen, Yi-Jun and Kim, Hansaem},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  year      = {2026},
+  pages     = {31109--31124},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2026.findings-acl.1556/},
+  doi       = {10.18653/v1/2026.findings-acl.1556}
+}
+```
 
 ## Usage terms
 
